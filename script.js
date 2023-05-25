@@ -20,3 +20,14 @@ calculateButton.addEventListener("click", () => {
     superContribution.value = "Salary Must Be Valid";
   }
 });
+
+const simulateSubmit = (event) => {
+  event.preventDefault();
+  //here we would handle the post request
+
+  alert("Thank you for joining the BestBank team.");
+  event.target.reset();
+};
+
+const myForm = document.getElementById("onboardForm");
+myForm.addEventListener("submit", simulateSubmit);
