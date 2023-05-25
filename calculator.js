@@ -16,6 +16,8 @@ const calcAnnualSuper = (salary) => {
   return salary * 0.095;
 };
 
+// This does not account for Medicare levy, function has been added as demonstration in case it was a hidden requirement.
+
 // const calcMedicareLevy = (salary) => {
 //   if (salary <= 22800) {
 //     return 0;
