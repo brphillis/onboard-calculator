@@ -1,4 +1,6 @@
-# Best Bank Onboarding Page
+## Best Bank Onboarding Page
+
+This does not account for Medicare levy, function has been added in commented code in calculator.js as demonstration if it was a hidden requirement.
 
 ## Running the Project
 

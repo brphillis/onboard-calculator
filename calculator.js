@@ -16,6 +16,20 @@ const calcAnnualSuper = (salary) => {
   return salary * 0.095;
 };
 
+// const calcMedicareLevy = (salary) => {
+//   if (salary <= 22800) {
+//     return 0;
+//   } else if (salary <= 28500) {
+//     return (salary - 22800) * 0.1;
+//   } else if (salary <= 90000) {
+//     return (salary - 28501) * 0.02 + 570;
+//   } else if (salary <= 140000) {
+//     return (salary - 90001) * 0.025 + 1796;
+//   } else {
+//     return (salary - 140001) * 0.03 + 4196;
+//   }
+// };
+
 if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
   // Export for node unit testing
   module.exports = {
