@@ -15,7 +15,15 @@ const calcAnnualTax = (salary) => {
 const calcAnnualSuper = (salary) => {
   return salary * 0.095;
 };
-module.exports = {
-  calcAnnualTax,
-  calcAnnualSuper,
-};
+
+if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
+  // Export for node unit testing
+  module.exports = {
+    calcAnnualTax,
+    calcAnnualSuper,
+  };
+} else {
+  // Export for browser es modules
+  window.calcAnnualTax = calcAnnualTax;
+  window.calcAnnualSuper = calcAnnualSuper;
+}
