@@ -16,5 +16,19 @@ const calcAnnualSuper = (salary) => {
   return parseInt(salary) * 0.095;
 };
 
-console.log(calcAnnualTax(50000));
-console.log(calcAnnualSuper(50000));
+const calculateButton = document.getElementById("calculateBtn");
+const salaryValue = document.getElementById("salary");
+const taxPaidValue = document.getElementById("taxPaid");
+const salaryAfterTax = document.getElementById("salaryAfterTax");
+
+calculateButton.addEventListener("click", () => {
+  const enteredSalary = parseFloat(salaryValue.value);
+  if (!isNaN(enteredSalary) && enteredSalary > 0) {
+    const calculatedTax = calcAnnualTax(enteredSalary).toString();
+    taxPaidValue.value = "$" + calculatedTax;
+    salaryAfterTax.value = enteredSalary - calculatedTax;
+  } else {
+    taxPaidValue.value = "Salary Must Be Valid";
+    salaryAfterTax.value = "Salary Must Be Valid";
+  }
+});
