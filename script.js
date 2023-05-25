@@ -1,5 +1,5 @@
 const calcAnnualTax = (salary) => {
-  if (salary <= 18200) {
+  if (parseInt(salary) <= 18200) {
     return 0;
   } else if (salary <= 45000) {
     return (salary - 18200) * 0.19;
@@ -13,7 +13,7 @@ const calcAnnualTax = (salary) => {
 };
 
 const calcAnnualSuper = (salary) => {
-  return salary * 0.095;
+  return parseInt(salary) * 0.095;
 };
 
 console.log(calcAnnualTax(50000));
