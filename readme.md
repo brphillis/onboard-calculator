@@ -1,5 +1,13 @@
 # Best Bank Onboarding Page
 
+## Running the Project
+
+Clone the repo by running:
+
+git clone https://github.com/brphillis/onboard-calculator.git
+
+Open the index.html file
+
 ## Unit Testing
 
 We ensure the reliability and accuracy of our onboarding page through unit testing. We utilize Jest to run our tests. Follow the steps below to run the tests:
